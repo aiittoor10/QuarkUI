@@ -1,0 +1,192 @@
+:root {
+    /* Variables for font colors */
+    --blackFontColor: #000;
+    --whiteFontColor: #FFF;
+    
+    /* Variables for button borders, colors, and sizes */
+    --borderSolidButton: 2px solid;
+    --btnBorderRadius: 5px;
+    --btnBackgroundTransition: background-color 0.3s ease;
+    --btnWidth: 120px;
+    --btnHeight: 40px;
+    --btnFontSize: 0.9rem;
+    --btnFontWeight: 500;
+
+    /* Common Colors */
+    --backgroundWhite: #FFFFFF;
+    --backgroundGreen: green;
+    --backgroundRed: red;
+    --backgroundBlue: #0589f5;
+    --backgroundYellow: yellow;
+    --backgroundOrange: orange;
+    --backgroundPurple: purple;
+    --backgroundGrey: grey;
+    --backgroundBrown: brown;
+    --backgroundBlack: black;
+}
+
+/* Style for general button class */
+.btn {
+    flex: 1 1 33%; 
+    margin: 5px;
+    text-align: center;
+    font-size: var(--btnFontSize);
+    font-weight: var(--btnFontWeight);
+    width: var(--btnWidth);
+    height: var(--btnHeight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--btnBorderRadius);
+    transition: var(--btnBackgroundTransition);
+    color: var(--whiteFontColor);
+}
+
+/* Individual button styles */
+.greenSolid {
+    background-color: var(--backgroundGreen);
+    border: 1px solid var(--backgroundGreen);
+}
+
+.greenSolid:hover {
+    background-color: var(--backgroundWhite);
+    color: var(--blackFontColor);
+    border: var(--borderSolidButton) var(--backgroundGreen);
+}
+
+.redSolid {
+    background-color: var(--backgroundRed);
+    border: 1px solid var(--backgroundRed);
+}
+
+.redSolid:hover {
+    background-color: var(--backgroundWhite);
+    color: var(--blackFontColor);
+    border: var(--borderSolidButton) var(--backgroundRed);
+}
+
+.blueSolid {
+    background-color: var(--backgroundBlue);
+    border: 1px solid var(--backgroundBlue);
+    color: var(--whiteFontColor);
+}
+
+.blueSolid:hover {
+    background-color: var(--backgroundWhite);
+    color: var(--blackFontColor);
+    border: var(--borderSolidButton) var(--backgroundBlue);
+}
+
+.yellowSolid {
+    background-color: var(--backgroundYellow);
+    border: 1px solid var(--backgroundYellow);
+    color: var(--blackFontColor);
+}
+
+.yellowSolid:hover {
+    background-color: var(--backgroundWhite);
+    color: var(--blackFontColor);
+    border: var(--borderSolidButton) var(--backgroundYellow);
+}
+
+.orangeSolid {
+    background-color: var(--backgroundOrange);
+    border: 1px solid var(--backgroundOrange);
+    color: var(--blackFontColor);
+}
+
+.orangeSolid:hover {
+    background-color: var(--backgroundWhite);
+    color: var(--blackFontColor);
+    border: var(--borderSolidButton) var(--backgroundOrange);
+}
+
+.purpleSolid {
+    background-color: var(--backgroundPurple);
+    border: 1px solid var(--backgroundPurple);
+    color: var(--whiteFontColor);
+}
+
+.purpleSolid:hover {
+    background-color: var(--backgroundWhite);
+    color: var(--blackFontColor);
+    border: var(--borderSolidButton) var(--backgroundPurple);
+}
+
+.greySolid {
+    background-color: var(--backgroundGrey);
+    border: 1px solid var(--backgroundGrey);
+    color: var(--blackFontColor);
+}
+
+.greySolid:hover {
+    background-color: var(--backgroundWhite);
+    color: var(--blackFontColor);
+    border: var(--borderSolidButton) var(--backgroundGrey);
+}
+
+.brownSolid {
+    background-color: var(--backgroundBrown);
+    border: 1px solid var(--backgroundBrown);
+    color: var(--blackFontColor);
+}
+
+.brownSolid:hover {
+    background-color: var(--backgroundWhite);
+    color: var(--blackFontColor);
+    border: var(--borderSolidButton) var(--backgroundBrown);
+}
+
+.blackSolid {
+    background-color: var(--backgroundBlack);
+    border: 1px solid var(--backgroundBlack);
+    color: var(--whiteFontColor);
+}
+
+.blackSolid:hover {
+    background-color: var(--backgroundWhite);
+    color: var(--blackFontColor);
+    border: var(--borderSolidButton) var(--backgroundBlack);
+}
+
+/* Color palette for the start page */
+.indexColors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.indexColors .color1, 
+.indexColors .color2, 
+.indexColors .color3, 
+.indexColors .color4 {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+.color1 { background-color: #DF2A4C; }
+.color2 { background-color: #E7A572; }
+.color3 { background-color: #1D4B3B; }
+.color4 { background-color: #F7E6D1; }
+
+/* Explore Colors button */
+.exploreColors {
+    padding: 10px 20px;
+    background-color: var(--backgroundGreen);
+    color: var(--whiteFontColor);
+    border: none;
+    border-radius: var(--btnBorderRadius);
+    cursor: pointer;
+    transition: var(--btnBackgroundTransition);
+    margin-bottom: 20px;
+    font-size: var(--btnFontSize);
+}
+
+.exploreColors:hover {
+    background-color: var(--backgroundWhite);
+    color: var(--blackFontColor);
+    border: var(--borderSolidButton) var(--backgroundGreen);
+}

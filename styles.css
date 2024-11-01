@@ -1,0 +1,50 @@
+:root{
+    --indexTargetBackground:#ffffff;
+    --colorLetter: #000000;
+}
+
+body {
+    color: rgb(0, 0, 0);
+}
+
+/*QUARKUI STYLE TITLE*/
+.uiLetter {
+    color: rgb(26, 109, 235);
+}
+
+.logo {
+    width: 90px;
+}
+
+/* Estilo general para la tarjeta */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-color:var(--indexTargetBackground);
+    min-height: 100%;
+    
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilo para el título de la tarjeta */
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+/* Estilo para el texto de la tarjeta */
+.card-text {
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
